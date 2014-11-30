@@ -19,7 +19,7 @@ brew install imagemagick
 
 次のGemfileを用意しておいて
 
-```
+```ruby
 source 'https://rubygems.org'
 gem 'rmagick'
 ```
