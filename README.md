@@ -42,6 +42,16 @@ gem 'rmagick'
 bundle install
 ```
 
+Ubuntu 14.04 の人は以下のように実行しないとダメかも…
+
+```
+PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig bundle install
+```
+
+### 参考
+
+[Ruby - RMagickのインストールでエラー - Qiita](http://qiita.com/hiroara@github/items/6b1c6c7257042a159cc9)
+
 実際に画像処理してみる
 ----------------------
 
