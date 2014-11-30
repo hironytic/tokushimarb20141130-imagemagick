@@ -14,6 +14,18 @@ brew update
 brew install imagemagick
 ```
 
+### For RedHat/CentOS/Fedora user
+
+```sh
+sudo yum install ImageMagick-devel
+```
+
+### For Debian/Ubuntu user
+
+```sh
+sudo apt-get install libmagickwand-dev
+```
+
 次に、RMagick（gem）を準備。  
 ※bundlerを使いましたが、gemでもOKだと…思います。
 
