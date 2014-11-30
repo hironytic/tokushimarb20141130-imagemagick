@@ -14,7 +14,7 @@ brew update
 brew install imagemagick
 ```
 
-次に、RMagick（gem）を準備。
+次に、RMagick（gem）を準備。  
 ※bundlerを使いましたが、gemでもOKだと…思います。
 
 次のGemfileを用意しておいて
@@ -67,8 +67,8 @@ image2.write('out.png')
 pixel = image.get_pixels(0, 0, 1, 1)[0]
 ```
 
-`pixel.red`, `pixel.green`, `pixel.blue`で各RGB成分が取得できます。
-それぞれ、0 〜 `Magick::QuantumRange`までの範囲をとります。
+`pixel.red`, `pixel.green`, `pixel.blue`で各RGB成分が取得できます。  
+それぞれ、0 〜 `Magick::QuantumRange`までの範囲をとります。  
 0〜255の範囲にしたければスケーリングが必要。
 
 ```ruby
