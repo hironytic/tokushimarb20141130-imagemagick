@@ -14,6 +14,18 @@ brew update
 brew install imagemagick
 ```
 
+### For RedHat/CentOS/Fedora user
+
+```sh
+sudo yum install ImageMagick-devel
+```
+
+### For Debian/Ubuntu user
+
+```sh
+sudo apt-get install libmagickwand-dev
+```
+
 次に、RMagick（gem）を準備。  
 ※bundlerを使いましたが、gemでもOKだと…思います。
 
@@ -29,6 +41,16 @@ gem 'rmagick'
 ```sh
 bundle install
 ```
+
+Ubuntu 14.04 の人は以下のように実行しないとダメかも…
+
+```
+PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig bundle install
+```
+
+### 参考
+
+[Ruby - RMagickのインストールでエラー - Qiita](http://qiita.com/hiroara@github/items/6b1c6c7257042a159cc9)
 
 実際に画像処理してみる
 ----------------------
